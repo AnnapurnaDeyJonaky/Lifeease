@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Confirmation Message -->
+    <TextView
+        android:id="@+id/text_view_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmation Message"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerInParent="true" />
+    <!-- View Appointments Button -->
+    <Button
+        android:id="@+id/btn_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

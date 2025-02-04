@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+
+    <!-- Doctor Image -->
+    <ImageView
+        android:id="@+id/image_view_doctor"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/person"
+        android:scaleType="centerCrop"
+        android:contentDescription="Doctor Image" />
+
+    <!-- Doctor Name -->
+    <TextView
+        android:id="@+id/text_view_doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Specialization -->
+    <TextView
+        android:id="@+id/text_view_specialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialization"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/text_view_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Fee -->
+    <TextView
+        android:id="@+id/text_view_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Visiting Time -->
+    <TextView
+        android:id="@+id/text_view_visiting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visiting Time"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Book Appointment Button -->
+    <Button
+        android:id="@+id/btn_book_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Appointment"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@android:color/white" />
+
+  </LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Delete, search a doctor by name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Doctor Name -->
+    <EditText
+        android:id="@+id/text_view_doctor_name_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor Name"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Doctor Specialization -->
+    <TextView
+        android:id="@+id/text_view_doctor_specialization_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specialization"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:padding="8dp" />
+
+    <!-- Doctor Fee -->
+    <TextView
+        android:id="@+id/text_view_doctor_fee_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fee"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:padding="8dp" />
+
+    <!-- Doctor ID -->
+    <TextView
+        android:id="@+id/text_view_doctor_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor ID"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:padding="8dp" />
+
+    <!-- Doctor Image -->
+    <ImageView
+        android:id="@+id/image_view_doctor_delete"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/button_search_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Search" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/button_delete_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Delete Doctor" />
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/button_back_delete"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:backgroundTint="@color/black"
+        android:text="BACK" />
+</LinearLayout>

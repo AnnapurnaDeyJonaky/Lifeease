@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_view_patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient: [Patient Name]"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor: [Doctor Name]"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: [Date]"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: [Time]"
+        android:textSize="14sp" />
+</LinearLayout>

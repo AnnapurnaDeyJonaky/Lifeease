@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841126718642",
+    "project_id": "medicineapp-df99b",
+    "storage_bucket": "medicineapp-df99b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841126718642:android:903ed94ef144a2be5d2dab",
+        "android_client_info": {
+          "package_name": "com.example.lifeease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQlii7He1bWfWWWkDsyldf7UuumNaqtNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

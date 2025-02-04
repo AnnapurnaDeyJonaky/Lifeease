@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".InsertProductActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Insert Product"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/upload" />
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_insert_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Product" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To update, search a doctor by name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_doctor_name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Doctor Name" />
+
+    <EditText
+        android:id="@+id/edit_text_specialization_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Specialization" />
+
+    <EditText
+        android:id="@+id/edit_text_phone_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edit_text_fee_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Consultation Fee"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edit_text_visiting_time_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Visiting Time" />
+
+    <TextView
+        android:id="@+id/text_view_doctor_id_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor ID"
+        android:textColorHint="@color/black"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false" />
+
+    <ImageView
+        android:id="@+id/image_view_doctor_update"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_select_image_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/button_update_in_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="Update Doctor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBackUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK" />
+</LinearLayout>

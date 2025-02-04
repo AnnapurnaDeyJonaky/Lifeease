@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="start">
+
+    <!-- Horizontal Layout for Product Name and Quantity -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="start|center_vertical">
+
+<!-- Product Name -->
+<TextView
+    android:id="@+id/text_view_product_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Product Name"
+    android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_delete_product_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="10dp"/>
+<!-- Product Quantity -->
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start|center_vertical">
+
+    <TextView
+        android:id="@+id/text_view_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 0"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: 0.0"
+        android:textSize="14sp"
+        android:paddingLeft="45dp"/>
+</LinearLayout>
+</LinearLayout>

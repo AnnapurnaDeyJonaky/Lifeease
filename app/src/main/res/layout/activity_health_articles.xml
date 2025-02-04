@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- TextView -->
+    <TextView
+        android:id="@+id/textViewHealthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Articles"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dp"/>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listViewHealthArticles"
+        android:layout_width="wrap_content"
+        android:layout_height="531dp"
+        android:layout_above="@id/backButtonHealthArticles"
+        android:layout_below="@id/textViewHealthTitle"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="60dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButtonHealthArticles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner"
+        android:text="Back" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3B84F1</color> <!-- Button Primary Color -->
+    <color name="secondary">#8A2BE2</color> <!-- Button Secondary Color -->
+    <color name="white">#FFFFFF</color> <!-- White for Text -->
+    <color name="black">#000000</color> <!-- Black for Input Text -->
+    <color name="gray">#B0B0B0</color> <!-- Hint Text Gray -->
+    <color name="background">#1E1E2E</color> <!-- Dark Background -->
+</resources>
+

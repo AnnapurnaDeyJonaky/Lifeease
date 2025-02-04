@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LifeEase</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="phone">phone</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="welcome_user">Welcome User!!!</string>
+    <string name="back">BACK</string>
+
+</resources>

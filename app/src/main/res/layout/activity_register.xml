@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    android:gravity="center"
+    android:scrollbars="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/white" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawablePadding="8dp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/et_register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawablePadding="8dp" />
+
+    <!-- Mobile Number Input -->
+    <EditText
+        android:id="@+id/et_register_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawablePadding="8dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawablePadding="8dp" />
+
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/et_register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawablePadding="8dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btn_sign_up_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textSize="18sp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btn_sign_up_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Register"
+            android:textSize="18sp"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

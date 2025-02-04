@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindDoctorActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/findDoctorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Doctor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- SearchView for searching doctors -->
+    <SearchView
+        android:id="@+id/doctorSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findDoctorTextView"
+        android:layout_margin="16dp"
+        android:queryHint="Search doctors by name or specialization"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_view_background"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- ListView for Doctors -->
+    <ListView
+        android:id="@+id/findDoctorsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/doctorSearchView"
+        android:layout_margin="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_above="@id/btnViewAppointments" />
+
+    <!-- View Appointments Button -->
+    <Button
+        android:id="@+id/btnViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Appointments"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

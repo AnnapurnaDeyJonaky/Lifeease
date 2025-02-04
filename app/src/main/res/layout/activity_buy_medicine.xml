@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyMedicineActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/buyMedicineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Medicine"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- SearchView for searching medicines -->
+    <SearchView
+        android:id="@+id/medicineSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buyMedicineTextView"
+        android:layout_margin="16dp"
+        android:queryHint="Search medicines"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/search_view_background"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+
+    <!-- ListView for Medicines -->
+    <ListView
+        android:id="@+id/buyMedicinesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/medicineSearchView"
+        android:layout_margin="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_above="@id/btnCart" />
+
+    <!-- Go to cart Button -->
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Cart"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/backButtonBuyMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="10sp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
