@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="#FAC1C1"
     android:gravity="center">
 
     <!-- Order Confirmation Message -->
@@ -17,19 +18,33 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp" />
 
-    <!-- Custom Location Input -->
+    <!-- Location Selection Spinner -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your delivery location:"
+        android:text="Select your delivery location:"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Additional Address Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your additional address (e.g., road number, house number):"
         android:textSize="16sp"
         android:layout_marginTop="20dp" />
 
     <EditText
-        android:id="@+id/editTextLocation"
+        android:id="@+id/editTextAdditionalAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter location"
+        android:hint="Enter additional address"
         android:padding="10dp"
         android:layout_marginBottom="20dp"
         android:inputType="text"/>
@@ -49,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirm Order"
+        android:backgroundTint="#20205F"
         android:layout_marginTop="20dp" />
 
 </LinearLayout>

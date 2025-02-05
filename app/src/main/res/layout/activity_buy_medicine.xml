@@ -58,9 +58,9 @@
         android:id="@+id/backButtonBuyMedicine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BACK"
-        android:textSize="10sp"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_corner"
-        android:textColor="@android:color/white" />
+        android:text="BACK"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
 </RelativeLayout>

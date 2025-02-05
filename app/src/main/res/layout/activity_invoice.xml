@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:backgroundTint="#F6EA7E"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@android:color/white">
@@ -47,7 +48,8 @@
         android:id="@+id/buttonBackToHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Home"
+        android:text="Previous"
+        android:backgroundTint="#181F43"
         android:textSize="16sp"
         android:padding="10dp"
         android:textColor="@android:color/white"

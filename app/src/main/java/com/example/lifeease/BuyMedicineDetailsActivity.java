@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
 public class BuyMedicineDetailsActivity extends AppCompatActivity {
 
     TextView tvProductName, tvTotalCost;
@@ -25,7 +24,6 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
     Button btnBack, btnAddToCart;
 
     private float productPrice; // Ensure this is a float
-
     private FirebaseAuth mAuth;
 
     @Override
@@ -46,8 +44,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
         // Receiving data from the intent
         Intent intent = getIntent();
         String productName = intent.getStringExtra("productName");
-        productPrice = intent.getFloatExtra("productPrice", 0); // Ensure it's retrieved as a float
-        productPrice=productPrice/10;
+        productPrice = intent.getFloatExtra("productPrice", 0); // Keep original price
 
         // Setting values to views
         tvProductName.setText(productName);
@@ -99,7 +96,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
 
             DatabaseHelper db = new DatabaseHelper(this);
 
-            if(quantity>50){
+            if(quantity > 50){
                 Toast.makeText(this, "You can't add more than 50 tablets", Toast.LENGTH_SHORT).show();
             }
             else if (db.checkCart(username, productName)) {
